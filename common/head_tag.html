@@ -75,7 +75,7 @@ api.createWidget("banner-box-widget", {
         h('div.container', [
           this.attach("banner-button-container-widget"),
           h('div.section-header', { innerHTML: settings.main_heading_content }),
-          this.attach('banner-content-widget') 
+          this.attach('banner-content-widget')
         ])
       ]
     }
@@ -237,4 +237,14 @@ api.createWidget("banner-content-widget", {
       {{plugin-outlet name="custom-banner"}}
     {{/unless}}
   {{/if}}
+</script>
+
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+{
+"symbol": "NASDAQ:AAPL",
+"width": "100%",
+"locale": "en",
+"colorTheme": "light",
+"isTransparent": false
+}
 </script>
